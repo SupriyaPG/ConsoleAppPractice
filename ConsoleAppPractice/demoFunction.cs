@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleAppPractice
 {
-    internal class function
+    internal class demoFunction
     {
         internal static void fun()
         {
