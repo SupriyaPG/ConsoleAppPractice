@@ -8,17 +8,19 @@ namespace ConsoleAppPractice
 {
     internal class demoFunction
     {
-        internal static void fun()
+        internal void fun()
         {
             int a = 10;
-            Console.WriteLine(a);
+            Console.WriteLine("Value of 'a' in first finction {0}",a);
+
         }
 
 
-        internal static void fun1()
+        internal void fun1()
         {
             int b = 100;
-            Console.WriteLine(b);
+            Console.WriteLine("Value of 'b' in first finction {0}", b);
+  
         }
     }
 

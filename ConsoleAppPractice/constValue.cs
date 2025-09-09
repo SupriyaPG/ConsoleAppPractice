@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace ConsoleAppPractice
 {
-    internal class Index
+    internal class constValue
     {
-        public static void main()
+        internal void fixValue()
         {
-           
-            
+            const String companyName = "Anshul Solutions";
+            Console.WriteLine("Company Name :"+companyName);
         }
     }
 }

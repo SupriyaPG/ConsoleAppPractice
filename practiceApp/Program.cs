@@ -1,0 +1,40 @@
+﻿using practiceApp;
+using System.Runtime.InteropServices;
+
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+       /* Console.WriteLine("Hello, World!");
+
+        employee emp=new employee();
+        emp.accept(001, "Sonu", 25);
+        emp.display();*/
+
+        Student[] obj=new Student[5];
+        for (int i = 0; i < obj.Length; i++)
+        {
+            obj[i] = new Student();
+            Console.WriteLine("Enter Roll No. :");
+            int rno = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter Fees:");
+            int fees = Convert.ToInt32(Console.ReadLine());
+            obj[i].Accept(rno, fees);
+         }
+
+        int Max = 0;
+        int studentIndex = 0;
+        for(int i = 0;i<obj.Length;i++)
+        {
+            if (Max < obj[i].fees)
+            {
+                Max = obj[i].fees;
+                studentIndex = i;
+            }
+        }
+        Console.WriteLine("Max Fees is:{0}", Max);
+        obj[studentIndex].Display();
+
+
+    }
+}
