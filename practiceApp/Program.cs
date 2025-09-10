@@ -9,7 +9,7 @@ internal class Program
 
         employee emp=new employee();
         emp.accept(001, "Sonu", 25);
-        emp.display();*/
+        emp.display();
 
         Student[] obj=new Student[5];
         for (int i = 0; i < obj.Length; i++)
@@ -32,9 +32,16 @@ internal class Program
                 studentIndex = i;
             }
         }
-        Console.WriteLine("Max Fees is:{0}", Max);
-        obj[studentIndex].Display();
 
+        Console.WriteLine("Max Fees is:{0}", Max);
+        obj[studentIndex].Display();  
+
+        ConstructorExamle ce=new ConstructorExamle();
+        ConstructorExamle objCon=new ConstructorExamle(30,20);  */
+
+        PropertyExample pe=new PropertyExample();
+        pe._Width = 200;  //setter
+        Console.WriteLine(pe._Width); //getter
 
     }
 }
