@@ -51,8 +51,8 @@ internal class Program
         h.FoodHabits();
         */
 
-        First f=new InterfaceDemo();
-        Second s=new InterfaceDemo();
+        IFirst f=new InterfaceDemo();
+        ISecond s=new InterfaceDemo();
         f.func1();
         f.func2();
         s.fun1();

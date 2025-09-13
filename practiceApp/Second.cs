@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace practiceApp
 {
-    internal interface Second
+    internal interface ISecond
     {
         void fun1();
         void fun2();

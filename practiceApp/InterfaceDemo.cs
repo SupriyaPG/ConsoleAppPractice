@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 // Advantages of interface - 1.Data Abstraction, 2.Multiple inheritance
 namespace practiceApp
 {
-    internal class InterfaceDemo : First, Second
+    internal class InterfaceDemo : IFirst, ISecond
     {
         public void fun1()
         {
