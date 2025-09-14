@@ -49,7 +49,7 @@ internal class Program
 
         c.FoodHabits();
         h.FoodHabits();
-        */
+        
 
         IFirst f=new InterfaceDemo();
         ISecond s=new InterfaceDemo();
@@ -58,5 +58,38 @@ internal class Program
         s.fun1();
         s.fun2();
         s.fun3();
+        
+
+        ExceptionHandling eh=new ExceptionHandling();
+        eh.Exc_Handling();  
+
+        //using throw keyword
+
+        int num;
+        try
+        {
+            Console.WriteLine("Enter a number:");
+            num = Convert.ToInt32(Console.ReadLine());
+
+            if (num < 0)
+            {
+                //throw new Exception();
+                throw new NegativeNumberException();
+            }
+        }
+        catch (NegativeNumberException ex)
+        { 
+        //    Console.WriteLine(ex.ToString());
+                Console.WriteLine(ex.Message); //User define exception NegativeNumberException
+        }
+
+        */
+
+        FileOperations fl=new FileOperations();
+         fl.createFile();
+         fl.AddContentInFile();
+        fl.appendContentInFile();
+        fl.readFileContent();
+        fl.deleteFile();
     }
 }
