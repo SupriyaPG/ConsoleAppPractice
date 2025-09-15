@@ -83,7 +83,7 @@ internal class Program
                 Console.WriteLine(ex.Message); //User define exception NegativeNumberException
         }
 
-        */
+        
 
         FileOperations fl=new FileOperations();
          fl.createFile();
@@ -91,5 +91,23 @@ internal class Program
         fl.appendContentInFile();
         fl.readFileContent();
         fl.deleteFile();
+
+        
+
+        CollectionExample example = new CollectionExample();
+        example.ArrayListFun();
+        
+
+        HashTable hs=new HashTable();
+        hs.HashtableFun();
+        
+
+        SortedListDemo sd=new SortedListDemo();
+        sd.SortedListFun();
+        */
+
+        StackDemo obj=new StackDemo();
+        obj.StackFun();
+
     }
 }
